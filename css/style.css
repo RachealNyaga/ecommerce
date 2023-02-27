@@ -1,14 +1,18 @@
-body {
-    padding: 0;
+*{
     margin: 0;
-    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin:  auto;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
+/* .container button .a{
+
+} */
 
 .btn {
     padding: 10px 30px;
@@ -28,7 +32,7 @@ body {
 /* All products */
 .all-products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
 
@@ -83,4 +87,56 @@ body {
 
 .add-product .btn {
     margin-top: 20px;
+}
+
+/* STYLING CONTAINER MAIN-NAV NO.2 */
+.navbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0.5rem;
+    justify-content: space-evenly;
+    padding-bottom: 0.5rem;
+    background-color: rgb(9, 70, 70);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.navbar h2{
+    color: white;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.navbar button{
+    margin-bottom: 1rem;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #f68616;
+}
+.navbar span{
+    font-size: 1.5rem;
+}
+.container button{
+    margin-bottom: 2rem;
+    width: fit-content;
+    padding: 1rem 2rem;
+    display: block;
+    font-size: 1rem;
+}
+.container button a {
+    text-decoration: none;
+}
+.container.product{
+    height: 5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-con h2{
+        font-size: 18px;
+    }
 }
