@@ -7,7 +7,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   let productID = params.product_id; // "get product_id"
 
   // Fetch single product with the ID we get above
-  fetch("https://fakestoreapi.com/products/" + productID) // after concatenation the URL should look like https://fakestoreapi.com/products/4
+  fetch("https://fakestoreapi.com/products/" + productID) 
   .then((res) => res.json())
   .then((product) => {
     console.log(product);
