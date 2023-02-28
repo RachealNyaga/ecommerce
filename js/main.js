@@ -4,7 +4,7 @@ fetch("https://fakestoreapi.com/products")
   .then((res) => res.json())
   .then((products) => {
     console.log(products)
-
+document.querySelector(".loading").classList.add("hide");
     products.forEach(product => {
         // Output products to the HTML
     allProducts.innerHTML += `<div class="product">
@@ -15,7 +15,7 @@ fetch("https://fakestoreapi.com/products")
                                 <br>
                                 <a href="./product.html?product_id=${product.id}">View product</a>
                            
-                                <button><a href="./cart.html">Add-to-cart</a></button>     </div>`
+                                    </div>`
     });
 
     
