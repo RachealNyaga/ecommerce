@@ -18,7 +18,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
                                     <p>${product.description}</p>
                                     <strong>$ ${product.price}</strong>
                                     <br>
-                                    <button class="btn">Add to cart</button>
+                                    <button ><a href="./cart.html">Add-to-cart</a></button> 
                                 </div>
                             </div>`
   });

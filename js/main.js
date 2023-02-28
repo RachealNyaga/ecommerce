@@ -11,11 +11,11 @@ fetch("https://fakestoreapi.com/products")
                                 <img src="${product.image}" alt="">
                                 <a href="./category.html?category=${product.category}">Category: ${product.category}</a>
                                 <h3>${product.title}</h3>
-                                
                                 <strong>$ ${product.price}</strong>
                                 <br>
                                 <a href="./product.html?product_id=${product.id}">View product</a>
-                            </div>`
+                           
+                                <button><a href="./cart.html">Add-to-cart</a></button>     </div>`
     });
 
     
