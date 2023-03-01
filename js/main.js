@@ -10,7 +10,7 @@ document.querySelector(".loading").classList.add("hide");
     allProducts.innerHTML += `<div class="product">
                                 <img src="${product.image}" alt="">
                                 <a href="./category.html?category=${product.category}">Category: ${product.category}</a>
-                                <h3>${product.title}</h3>
+                                <h4>${product.title}</h4>
                                 <strong>$ ${product.price}</strong>
                                 <br>
                                 <a href="./product.html?product_id=${product.id}">View product</a>
